@@ -1,0 +1,171 @@
+body{
+    margin: 0;
+}
+.container{
+    width: 100%;
+    height: 90vh;
+}
+
+.container .anouncement{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 2;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.container .anouncement img{
+    min-width: 200px;
+    width: 65%;
+    max-width: 700px;
+}
+
+.anouncement .anounText{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    z-index: 3;
+    top: 75%;
+}
+.anouncement .anounText span{
+    color: #fff;
+    font-size: 1.7rem;
+    font-weight: bold;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+}
+#homeBtn {
+    background: linear-gradient(to right, #348F50, #56B4D3);
+    width: 150px;
+    height: 40px;
+    outline: none;
+    border: none;
+    border-radius: 50px;
+
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-align: center;
+    line-height: 40px;
+    text-decoration: none;
+
+    position: absolute;
+    z-index: 10;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#oops{
+  font-size: 2rem
+}
+
+
+#game{
+    position: relative;
+    z-index: 3;
+}
+#UFO{
+    width: 70px;
+    position: relative;
+    transform: translate(85vw,50px);
+    transition: 1s cubic-bezier(0,1.11,.68,1.18);
+}
+.gameBtn{
+    width: 70px;
+    height: 35px;
+    outline: none;
+    border: none;
+    border-radius: 50px;
+
+    position: relative;
+    z-index: 10;
+    transform: translate(85vw,175px);
+}
+
+.container-trash{
+    width: 75px;
+    height: 95px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    top: -150px;
+    transition: 1s cubic-bezier(0,1.11,.68,1.18);
+    /* animation: move-trash 1.5s infinite ease-in-out; */
+}
+.container-trash img{
+  width: 40px;
+}
+
+@keyframes move-trash {
+  0% {
+    transform: rotate(0deg);
+  }
+  50%{
+    transform: rotate(15deg);
+  }
+  100%{
+    transform: rotate(0deg);
+  }
+}
+
+@import "susy";
+@import "compass/reset";
+
+.stars,
+.twinkling,
+.clouds {
+  position: absolute;
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.stars {
+  z-index: 0;
+  background: #000 url("https://i.imgur.com/YKY28eT.png") repeat top center;
+}
+
+.twinkling {
+  z-index: 1;
+  background: transparent url("https://i.imgur.com/XYMF4ca.png") repeat top
+    center;
+  animation: move-twink-back 200s linear infinite;
+}
+
+/* .clouds {
+  z-index: 2;
+  background: transparent url("https://i.imgur.com/mHbScrQ.png") repeat top
+    center;
+  animation: move-clouds-back 200s linear infinite;
+} */
+
+@keyframes move-twink-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+
+@keyframes move-clouds-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 10000px 0;
+  }
+}

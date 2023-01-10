@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found</title>
+    <link rel="stylesheet" href="./assets/CSS/style.css">
+    <link rel="stylesheet" href="./assets/CSS/responsive.css">
+</head>
+<body>
+    <div class="container">
+        <div class="background-space">
+            <div class='stars'></div>
+            <div class='twinkling'></div>
+            <div class='clouds'></div>
+        </div>
+
+        <button class="gameBtn" id="startBtn" type="button" onclick="onStart()">Start</button>
+        <button class="gameBtn" id="stopBtn" type="button" onclick="onStop()">Stop</button>
+        <div id="game"  onmousemove="moveUFO(event)">
+            <img src="./assets/CSS/img_icon/UFO.png" alt="UFO" id="UFO">
+            
+            <div class="container-trash">
+                <img src="./assets/CSS/img_icon/trash1.png" alt="trash">
+            </div>
+            <div class="container-trash">
+                <img src="./assets/CSS/img_icon/trash2.png" alt="trash">
+            </div>
+            <div class="container-trash">
+                <img src="./assets/CSS/img_icon/trash3.png" alt="trash">
+            </div>
+            <div class="container-trash">
+                <img src="./assets/CSS/img_icon/trash4.png" alt="trash">
+            </div>
+            <div class="container-trash">
+                <img src="./assets/CSS/img_icon/trash5.png" alt="trash">
+            </div>
+            <div class="container-trash">
+                <img src="./assets/CSS/img_icon/trash6.png" alt="trash">
+            </div>
+            <div class="container-trash">
+                <img src="./assets/CSS/img_icon/trash7.png" alt="trash">
+            </div>
+            <div class="container-trash">
+                <img src="./assets/CSS/img_icon/trash8.png" alt="trash">
+            </div>
+            <div class="container-trash">
+                <img src="./assets/CSS/img_icon/trash9.png" alt="trash">
+            </div>
+            <div class="container-trash">
+                <img src="./assets/CSS/img_icon/trash10.png" alt="trash">
+            </div>
+            <div class="container-trash">
+                <img src="./assets/CSS/img_icon/trash11.png" alt="trash">
+            </div>
+            <div class="container-trash">
+                <img src="./assets/CSS/img_icon/trash12.png" alt="trash">
+            </div>
+            <div class="container-trash">
+                <img src="./assets/CSS/img_icon/trash13.png" alt="trash">
+            </div>
+            <div class="container-trash">
+                <img src="./assets/CSS/img_icon/trash14.png" alt="trash">
+            </div>
+        </div>    
+
+        <div class="anouncement btnBack">
+            <img src="./assets/CSS/img_icon/404.png" alt="Page not found" />
+            <div class="anounText">
+                <span id="oops">Oops!</span>
+                <span>Page Not Found</span>
+            </div>
+        </div>
+        <a href="#" id="homeBtn">HOME</a>
+        
+    </div>
+</body>
+<script src="./assets/JS/game_js.js"></script>
+</html>
